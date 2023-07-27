@@ -1,0 +1,84 @@
+<!-- config.html -->
+{% extends 'base.html' %}
+
+{% block head %}
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js')}}"></script>
+{% endblock %}
+
+{% block content %}
+    </form>
+    <h2>Config</h2>
+    <form id="config" method="POST" action="/config">
+        <div id="top">
+            <div>
+                <h3>検索するキャラクター名を入力してください</h3>
+                <input type="text" id="char_name" name="name" value="{{ char_name }}">
+            </div>
+            <div id='Buyer'>
+                <h3>検索：購入を行ったワールドを設定してください。</h3>
+                <div id="DC">
+                    <label>データセンター</label>
+                    <select name="buyer_Datacenter_select" id="buyer_Datacenter" onchange="change_buyer_Datacenter()">
+                        <option value="0">--DCを選択してください--</option>
+                        <option value="Elemental">Elemental</option>
+                        <option value="Gaia">Gaia</option>
+                        <option value="Mana">Mana</option>
+                        <option value="Meteor">Meteor</option>
+                        <option value="Aether">Aether</option>
+                        <option value="Crystal">Cryatal</option>
+                        <option value="Dynamis">Dynamis</option>
+                        <option value="Primal">Primal</option>
+                        <option value="Chaos">Chaos</option>
+                        <option value="Light">Light</option>
+                        <option value="Materia">Materia</option>
+                    </select>
+                </div>
+                <div id="Wd">
+                    <label>ワールド</label>
+                    <select name="buyer_World_select" id="buyer_World">
+                        <option value="">--Worldを選択してください--</option>
+                    </select>
+                </div>
+            </div>
+            <div id='Seller'>
+                <h3>検索：販売を行うワールドを設定してください。</h3>
+                <label>データセンター</label>
+                <select name="seller_Datacenter_select" id="seller_Datacenter" onchange="change_seller_Datacenter()">
+                    <option value="0">--DCを選択してください--</option>
+                    <option value="Elemental">Elemental</option>
+                    <option value="Gaia">Gaia</option>
+                    <option value="Mana">Mana</option>
+                    <option value="Meteor">Meteor</option>
+                    <option value="Aether">Aether</option>
+                    <option value="Crystal">Cryatal</option>
+                    <option value="Dynamis">Dynamis</option>
+                    <option value="Primal">Primal</option>
+                    <option value="Chaos">Chaos</option>
+                    <option value="Light">Light</option>
+                    <option value="Materia">Materia</option>
+                </select>
+            </div>
+            <div id="Wd">
+                <label>ワールド</label>
+                <select name="seller_World_select" id="seller_World">
+                    <option value="">--Worldを選択してください--</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <p><input type="submit" value="確認" id="submit"></p>
+        </div>
+    </form>
+    <div id="readme">
+        <h2>How to use</h2>
+        <h3>1. まずは「<a href="https://universalis.app/">Universalis.app</a>」にて初期設定を行ってください。</h3>
+            <h4>ページを初めて訪れた場合は設定画面が開くと思いますが、開かない場合は右上の<img id="UVS_config" src="./static/UVS_config.png">マークをクリックして設定を行ってください。</h4>
+            <img id="UVS_config2" src="./static/UVS_config2.png">
+        <h3>2. 次に、このページの上部の設定を行ってください。</h3>
+            <img id="UVS_config3" src="./static/UVS_config3.png">
+            <h4>※キャラクター名のファーストネームとファミリーネームの間は半角スペースを空けてください。(履歴検索の絞り込みに用います。)</h4>
+            <h4>※「購入を行ったワールド」は、ワールドテレポを用いて材料の購入を行っている場合はALLがおススメです。(履歴検索のワールドの範囲を指定します。)</h4>
+            <h4>※「販売を行うワールド」は、キャラクターのホームDC・ワールドを設定してください。(利益率の計算を行う為に使用します。)
+        <h3>3. 確認を押して確定してください。(登録すると、情報がクッキーに保存されます。(有効期限4週間</h3>
+    </div>
+{% endblock %}

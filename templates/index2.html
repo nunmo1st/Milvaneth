@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block head %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/category_script2.js')}}"></script>
+{% endblock %}
+
+{% block content %}
+<form method="GET" action="/category"> 
+{{message1| safe}}
+</form>
+</div>
+<div id="sub_menu"><form>{{message2| safe}}</form></div>
+
+{% endblock %}
+</body>
+</html>
