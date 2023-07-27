@@ -1,0 +1,588 @@
+
+@font-face {
+  font-family: 'Eorzea';
+  src: url('./Eorzea-Regular.woff') format('woff');
+  /* 追加のフォントスタイルやオプションを指定することもできます */
+}
+
+h1{ 
+    
+    font-size:medium;
+    color: red;
+    border-left: solid 6px red;/*左側の線*/
+    background: #f1f8ff;/*背景色*/
+    margin-bottom: 3px;/*下のバーとの余白*/
+     line-height: 1.5;
+    padding: 0.5em;
+  }
+
+h2{
+  font-size:medium;
+  margin:0px;
+  padding:0px;
+}
+
+.category_mini_h3{
+  font-size:small;
+  margin:0px;
+  padding:0px;
+}
+
+h3{
+    font-size:small;
+    text-align: left;
+    margin:3px;
+    padding-bottom:3px;
+}
+
+h4{
+    font-size:small;
+}
+p{
+  text-align: left;
+  margin:3px;
+}
+
+
+#top{
+  margin:10px;
+}
+
+.item_button{
+  margin-top:-30px;
+}
+
+#menu{
+  width:200px;
+  height:100vh;
+  float:left;
+}
+#result{
+  width:650px;
+  float:left;
+}
+
+#result_main{
+  float:left;
+  width:620px;
+  border-left: solid 10px red;/*左側の線*/
+  border-right: solid 10px red;/*左側の線*/
+  border-top: solid 3px red;
+  border-bottom: solid 3px red;
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 3px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 5px;
+  margin-bottom: 10px;
+
+}
+
+#main_list{
+  float:left;
+  width:1170px;
+  height:100%
+
+}
+
+#Buyer{
+  float:left;
+  margin-right:20px;
+}
+
+
+#mode{
+  width:620px;
+  text-align: center;
+}
+
+
+#main{
+  float:left;
+  width:1170px;
+}
+#main_contents2{
+  float:left;
+  width:900px;
+
+}
+#sub_result{
+  float:left;
+  width: 650px;
+}
+
+
+#field{
+    width:550px;
+    padding-right:30px;
+}
+.item_category{
+  padding-left:0px;
+  margin-left: 0px;
+}
+button{
+  margin:0px;
+  padding:0px;
+  border-style: none;
+}
+
+.UVS_icon{
+  
+	width:40px;
+	height:40px;
+  margin-left:-45px;
+  margin-bottom:-10px;
+  border-style: none;
+}
+
+.UVS_icon_Big{
+	width:80px;
+	height:80px;
+  margin-left:-90px;
+  margin-bottom:-10px;
+  border-style: none;
+}
+
+.item_list{
+  list-style: none;
+  padding-left:0px;
+  float:left;
+  width:auto;
+}
+.item_button:hover {
+
+  background-color:coral;
+  cursor: pointer;
+}
+
+.select_category:hover {
+  /* background-color: coral; */
+  cursor: pointer;
+}
+
+.category{
+  height:40px;
+  width:40px;
+  margin:0px;
+  padding:0px;
+}
+.select_category_mini{
+  vertical-align:top;
+  text-align: center;
+  background-color:darkseagreen;
+    height:20px;
+    width:90px;
+}
+.select_category_mini:hover{
+  background-color: coral;
+  cursor: pointer;
+}
+
+.select_category_mini2{
+  vertical-align:top;
+  text-align: center;
+  background-color:darkseagreen;
+  height:20px;
+  width:185px;
+}
+.select_category_mini2:hover{
+  background-color: coral;
+  cursor: pointer;
+}
+
+.category_mini{
+  height:20px;
+  width:20px;
+  float:left;
+  padding:0px;
+  margin:0px;
+}
+.category_mini_h2{
+  font-size:small;
+  float:left;
+}
+
+/* .material{
+  width:500px;
+} */
+
+.material_market_price{
+  width:450px;
+}
+
+.material_market_price2{
+  width:100%;
+
+}
+
+.material_etc{
+  margin-left: 50px;
+}
+
+.material_etc.h2{
+  position:relative;
+
+}
+
+.material_etc3{
+  height:80px;
+  width:550px;
+  display:table-cell;
+  vertical-align: middle;
+  clear:both;
+}
+.material_etc3 h3{
+
+  width:250px;
+  margin-right: 10px;
+  float:left;
+}
+
+.material_etc2{
+  height:50px;
+  margin-top:5x;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.sub_material{
+  margin-left:50px;
+  width:100%;
+}
+
+.sub_sub_material{
+  margin-left:100px;
+}
+
+  /* Chrome、Safari以外 */
+summary {
+  display:block;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+
+
+summary:hover {
+  cursor: pointer; /* カーソルを指マークに */
+  background-color: #EFEFEF;
+}
+/* Chrome、Safari */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+/* ホバー時のスタイル */
+
+.iconL{
+  float:left;
+  margin-right:10px;
+}
+
+.icon{
+  margin:0px;
+  padding-right:5px;
+  float:left;
+}
+.sub_icon{
+  height:50px;
+  float:left;
+
+}
+
+.icon_T{
+  float:left;
+  height: 50px;
+  padding-right: 10px;
+}
+
+.icon_T0{
+  float:left;
+  height:50px;
+  padding-right: 10px;
+}
+.HQ{
+	width:1em;
+	height:1em;
+	margin-left: 5px;
+  margin-right: 5px;
+
+}
+a{
+  text-decoration: none;
+}
+
+.clear{
+  height:1px;
+  clear:left;
+}
+
+details{
+  clear:left;
+
+}
+.sub_UVS{
+  height:50px;
+  width:35px;
+  float:left;
+
+}
+.material_price{
+  margin:0px;
+}
+
+.UVS{
+  width:35px;
+  height:55px;
+  float:left;
+}
+.icons{
+  float:left;
+}
+
+.icon_T_blank{
+  float:left;
+}
+
+
+.sell_player{
+  width:180px;
+  margin-left:10px;
+  float:left
+}
+.buy_player{
+  text-align: center;;
+  padding-top:1.5em;
+  float:left;
+  width:310px;
+}
+.result_item{
+  margin-left:100px;
+}
+#sub_menu{
+  float:left;
+  width:300px;
+  height:1000px;
+}
+.hq_historu{
+  color: black;
+}
+
+.nq_history{
+  color: black;
+}
+.old_history{
+  color: gray;
+}
+#history h2{
+  margin-top:10px;
+  margin-left: 20px;
+  width:600px;
+}
+#history_icon{
+ width:600px;
+ height:100px;
+ margin-left: 20px;
+}
+#history_icon h4{
+  margin:0px;
+}
+.history_material{
+  margin-right: 10px;
+}
+
+button{
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+.market{
+  width:20px;
+  height:20px;
+  margin:0px;
+}
+details{
+
+  margin-left: 27px;
+}
+
+.market_icon{
+  margin-left:10px;
+  margin-bottom:-5px;
+  vertical-align: bottom;
+}
+.market_icon:hover{
+  cursor:pointer;
+}
+.time{
+  width:200px;
+  float:left;
+}
+.price{
+  width:150px;
+  float:left;
+}
+.quantity{
+  width:130px;
+  float:left;
+}
+.buyer{
+  width:250px;
+  float:left;
+}
+.favorite_list{
+  float:left;
+  width:350px;
+}
+#top_main{
+  width:1000px;
+  height:100%;
+  float:left;
+}
+#top_main ul{
+  padding-left:0;
+  width:1150px;
+
+
+}
+#top_main li{
+
+  list-style: none;
+}
+.favorite_item{
+  margin-left:5px;
+  float:left;
+}
+
+.item_list li{
+  width:200px;
+}
+.item_list h3{
+  width:350px;
+}
+.item_list_image{
+  float:left;
+}
+.F_item_list2{
+  float:left;
+}
+.F_item_list2 h3{
+  width:auto;
+}
+
+.item_list2{
+  float:left;
+  width:250px;
+}
+.item_button2{
+  float:left;
+}
+
+#UVS_config{
+  height:1.5em;
+  width:1.5em;
+}
+#UVS_config3{
+  height:154px;
+  width:493px;
+}
+
+#readme h4{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+#favorite_material{
+  clear:both;
+}
+
+#main_result{
+  float:left;
+}
+#contents{
+  float:left;
+  width:680px;
+}
+
+.switch_label {
+  position: relative;
+}
+
+.switch_label input[type='checkbox'] {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+input:checked ~ .base {
+  background-color: rgb(219, 234, 254);
+}
+
+input:checked ~ .circle {
+  transform: translateX(100%);
+  background-color: blue;
+  transition:0.5s
+}
+
+.switch_label {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: gray;
+  transition:0.5s;
+}
+
+.switch {
+  position: relative;
+}
+
+.base {
+  width: 56px;
+  border-radius: 16px;
+  height: 32px;
+  background-color: #ddd;
+}
+
+
+.title {
+  margin-left: 4px;
+}
+
+#nomal_mode{
+  width:620px;
+  border-left: solid 10px green;/*左側の線*/
+  border-right: solid 10px green;/*左側の線*/
+  border-top: solid 3px green;
+  border-bottom: solid 3px green;
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 3px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+#chara_mode{
+  width:620px;
+  border-left: solid 10px red;/*左側の線*/
+  border-right: solid 10px red;/*左側の線*/
+  border-top: solid 3px red;
+  border-bottom: solid 3px red;
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 3px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
